@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/background.js"></script>
+</head>
+<body>
+    <main class="scroll-area">
+
+        <input id="home" type="radio" onclick="change()" name="nav" class="home_input" checked>
+        <input id="sobre-mi" type="radio" onclick="change()" name="nav" class="about_input">
+        <input id="fortalezas" type="radio" onclick="change()" name="nav" class="skills_input">
+        <input id="contacto" type="radio" onclick="change()" name="nav" class="contact_input">
+
+        <nav class="menu">
+            <label class="menu__label" for="home">Home</label>
+            <label class="menu__label" for="sobre-mi">Sobre mi</label>
+            <label class="menu__label" for="fortalezas">Fortalezas</label>
+            <label class="menu__label" for="contacto">Contacto</label>
+        </nav>
+
+        <div class="cartas">
+                <section id="home-nav-a" class="scroll-section home-gradient">
+                    <h1 class="name">Binca Shinaasi</h1>
+                    <div class="container__descripcion-profesion">
+                        <div class="descripcion__profesion">
+                            <h2 class="descripcion-profesion__diseñadora">Diseñadora UX/UI</h2>
+                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.49996 8.6611L9.1794 10.6111L8.15385 7.46221L10.8333 5.55554H7.54718L6.49996 2.30554L5.45274 5.55554H2.16663L4.84607 7.46221L3.82051 10.6111L6.49996 8.6611Z" fill="white"/>
+                                </svg>                                
+                            <h2 class="descripcion-profesion__web-developer">Web Developer</h2>
+                        </div>
+                    </div>
+                    <ul class="redes-sociales">
+                        <li><a class="link__redes-sociales" href="#">GITHUB</a></li>
+                        <li><a class="link__redes-sociales" href="#">INSTAGRAM</a></li>
+                        <li><a class="link__redes-sociales" href="#">LINKEDIN</a></li>
+                    </ul>
+                </section>
+
+                <section id="about-nav-a" class="scroll-section about">
+                    <h4 class="header-about">Me llamo Binca y me gusta todo lo que tiene que ver con crear cosas, moldear e investigar.</h4>
+                    <p>Si, crear cosas, ya sean artísticas, profesionales o en mi día a día. 
+                        Todo comenzó cuando cogí un lápiz por primera vez de pequeña y lo llevaba conmigo a todas partes.
+                        <details class="details__about">
+                            <summary class="summary__about">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.8101 24V6" stroke="#115099" stroke-width="3"/>
+                                <path d="M5.00003 15L24.6206 15" stroke="#115099" stroke-width="3"/>
+                                </svg>
+                            </summary>
+                            Durante toda mi vida he dibujado, cuando termine bachillerato comencé la carrera de Bellas Artes 
+                            con la finalidad de encontrar un lugar en el que encajar. 
+                        </details>
+                    </p>
+                    <img class="imagen-about" src="" alt="">
+                    <p class="frase-motivadora">Apasionada, curiosa, energética e investigadora</p>
+                    <p>En la universidad me especialicé como diseñadora gráfica, 
+                        y es ahí donde me dí cuenta que necesitaba ir un nivel más allá; 
+                        el diseño de experiencia para el mundo digital. 
+                        <details class="details__about">
+                            <summary class="summary__about">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.8101 24V6" stroke="#115099" stroke-width="3"/>
+                                <path d="M5.00003 15L24.6206 15" stroke="#115099" stroke-width="3"/>
+                                </svg>
+                            </summary>
+                            A día de hoy estoy plenamente interesada en el UX/UI, 
+                            me gusta estar muy bien formada profesionalmente, lo cual me lleva a leer libros sobre experiencias de usuario, 
+                            artículos de interés de profesionales del sector,
+                            y alimentar mi creatividad con los diseños que encuentro. 
+                        </details>
+                    </p>
+                    <p>Soy creadora por naturaleza, me gusta empezar cosas y moldearlas. 
+                        <details class="details__about">
+                            <summary class="summary__about">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.8101 24V6" stroke="#115099" stroke-width="3"/>
+                                <path d="M5.00003 15L24.6206 15" stroke="#115099" stroke-width="3"/>
+                                </svg>
+                            </summary>
+                            Modelo mi carácter, mi profesionalidad, y mi físico. Y si, soy una motivada, y me encanta. 
+                            A veces siento que debería estar dando charlas TED (lo cual me encantaría). 
+                        </details>
+                    </p>
+                    <p>Adoro el dulce, el café, el vino y los aromas...</p>
+                    <div class="cotainer-icons">
+                        <svg class="icon-wine" width="38" height="82" viewBox="0 0 38 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18.5" cy="18.5" r="18.5" fill="url(#paint0_radial_251_223)"/>
+                            <path d="M33.7614 1.44247C20.1198 0.555826 -4.96546 0.403831 3.82576 6.88897C5.97302 7.9445 15.421 9.19424 36.0349 5.74901C38.2664 15.4598 38.0559 35.0841 19.3619 35.8948C14.7305 35.4304 6.95821 37.5921 12.9201 49.9544C20.3724 65.4073 21.3829 73.767 19.3619 75.287C17.3409 76.8069 6.60454 78.7069 3.95202 77.6936C1.29949 76.6803 31.993 72.1204 32.2456 77.6936C32.4477 82.1521 12.9622 81.1557 3.19415 80.1002" stroke="#115099" stroke-width="2"/>
+                            <defs>
+                            <radialGradient id="paint0_radial_251_223" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.30383e-06 37) rotate(-50.1428) scale(43.4193)">
+                            <stop stop-color="#D9D4EB"/>
+                            <stop offset="1" stop-color="#D9D4EB" stop-opacity="0"/>
+                            </radialGradient>
+                            </defs>
+                        </svg>
+
+                        <svg class="icon-cafe" width="62" height="59" viewBox="0 0 62 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M44.1297 14.977C52.2145 23.1207 52.1667 36.2764 44.023 44.3612C35.8793 52.446 22.7236 52.3982 14.6388 44.2545C6.55401 36.1108 6.60178 22.955 14.7455 14.8703C22.8892 6.78548 36.045 6.83325 44.1297 14.977Z" fill="url(#paint0_radial_251_222)"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4622 5.03797C25.0383 4.57286 24.537 4.16522 24.0803 3.86152L24.5228 3.19409C25.0248 3.52788 25.5782 3.97686 26.053 4.49786C26.5251 5.01582 26.9392 5.62637 27.1303 6.28463C27.3256 6.95685 27.2858 7.67676 26.8496 8.36031C26.4232 9.02852 25.6456 9.61843 24.4549 10.1133C23.0783 10.6854 22.3269 11.4069 21.9621 12.1281C21.5981 12.8479 21.5922 13.6205 21.809 14.3504C22.0272 15.085 22.4676 15.7597 22.9642 16.2482C23.4763 16.7519 23.979 16.9925 24.3016 16.9925V17.7937C23.6657 17.7937 22.97 17.3769 22.4036 16.8198C21.8217 16.2474 21.3034 15.458 21.0422 14.5789C20.7797 13.6952 20.7737 12.7048 21.2485 11.7661C21.7225 10.8288 22.6488 9.99648 24.1483 9.3733C25.2584 8.91192 25.8709 8.40616 26.1755 7.92888C26.4703 7.46695 26.5025 6.99158 26.3622 6.50836C26.2178 6.01117 25.8889 5.50612 25.4622 5.03797ZM37.4454 5.03797C37.0214 4.57286 36.5202 4.16522 36.0635 3.86152L36.506 3.19409C37.008 3.52788 37.5614 3.97686 38.0362 4.49786C38.5083 5.01582 38.9224 5.62637 39.1135 6.28463C39.3087 6.95685 39.269 7.67676 38.8328 8.36031C38.4064 9.02852 37.6288 9.61843 36.4381 10.1133C35.0615 10.6854 34.3101 11.4069 33.9453 12.1281C33.5813 12.8479 33.5754 13.6205 33.7922 14.3504C34.0104 15.085 34.4508 15.7597 34.9474 16.2482C35.4536 16.7461 35.9505 16.9869 36.2735 16.9924C38.7635 16.8329 42.4967 16.7849 45.6199 17.1628C47.1802 17.3515 48.6187 17.6499 49.6782 18.1104C50.7119 18.5597 51.5442 19.239 51.5442 20.2618C51.5442 20.6271 51.3279 20.9084 51.0662 21.1113C50.8043 21.3143 50.4447 21.4826 50.0245 21.6274C49.1799 21.9186 47.981 22.1512 46.5293 22.3385C43.6187 22.7139 39.6018 22.9173 35.1545 23.0051C26.4172 23.1774 15.969 22.9037 8.8583 22.5918C8.6636 25.9928 8.91313 31.1095 10.2707 35.8698C11.6844 40.8271 14.2703 45.3019 18.7032 47.1443C27.3398 50.7338 39.6423 51.007 46.3195 40.6041C48.4691 37.2552 50.0546 32.779 50.7469 26.9084L50.7852 26.584L51.1101 26.5562C52.4677 26.4402 54.026 26.4452 55.4947 26.6656C56.9563 26.8848 58.3687 27.323 59.3997 28.1032C60.4521 28.8996 61.0952 30.0466 60.9885 31.603C60.8841 33.1257 60.0649 34.9984 58.3228 37.2989C57.5923 38.2635 56.6847 39.1113 55.6293 39.7289C54.3461 40.4798 52.7129 41.2499 51.0825 41.6321C49.5989 41.9798 48.0542 42.0204 46.7827 41.3581C39.7507 51.9159 27.0973 51.5004 18.3966 47.8843C13.6264 45.9017 10.9397 41.133 9.50142 36.0898C8.05986 31.0349 7.84288 25.6079 8.085 22.1462L8.11225 21.7566L8.50191 21.7741C15.6073 22.0926 26.263 22.3791 35.1387 22.204C39.5789 22.1165 43.5608 21.9136 46.4271 21.5439C47.8639 21.3586 48.998 21.134 49.7642 20.8699C50.1494 20.7371 50.4147 20.6032 50.5764 20.4778C50.7382 20.3523 50.7442 20.279 50.7442 20.2618C50.7442 19.7546 50.3381 19.2706 49.3597 18.8453C48.4069 18.4312 47.0593 18.1439 45.5239 17.9581C42.4616 17.5877 38.7735 17.6344 36.3104 17.7929L36.2976 17.7937H36.2848C35.6489 17.7937 34.9532 17.3769 34.3868 16.8198C33.8049 16.2474 33.2866 15.458 33.0254 14.5789C32.7629 13.6952 32.7569 12.7048 33.2317 11.7661C33.7057 10.8288 34.632 9.99648 36.1315 9.3733C37.2416 8.91192 37.8541 8.40616 38.1587 7.92888C38.4535 7.46695 38.4857 6.99158 38.3454 6.50836C38.201 6.01117 37.872 5.50612 37.4454 5.03797ZM47.2171 40.6802C48.234 41.181 49.5243 41.1745 50.9002 40.852C52.4259 40.4944 53.9825 39.7646 55.2257 39.0372C56.1791 38.4793 57.0101 37.7065 57.6854 36.8148C59.3887 34.5655 60.1015 32.8437 60.1904 31.5481C60.2769 30.2861 59.7745 29.391 58.9174 28.7424C58.0389 28.0776 56.7776 27.6681 55.3762 27.4579C54.0954 27.2657 52.7305 27.2449 51.5017 27.3295C50.8035 32.9339 49.2898 37.3165 47.2171 40.6802Z" stroke="#115099"/>
+                            <defs>
+                            <radialGradient id="paint0_radial_251_222" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(29.2776 59) rotate(-89.9717) scale(53.3862)">
+                            <stop offset="0.207516" stop-color="#D9D4EB"/>
+                            <stop offset="0.850611" stop-color="#D9D4EB" stop-opacity="0"/>
+                            </radialGradient>
+                            </defs>
+                        </svg>
+
+                        <svg class="icon-magdalena" width="50" height="59" viewBox="0 0 50 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.12826 31.428C-0.149393 22.9921 12.791 17.2708 19.3251 7.46972C25.8592 -2.33141 26.7304 6.59851 34.3535 13.5682C41.9766 20.5379 48.5307 32.5769 40.0164 39.9223C31.502 47.2677 14.4059 39.8638 7.12826 31.428Z" fill="url(#paint0_radial_251_226)"/>
+                            <path d="M6.52382 36.9617L12.7758 53.478C13.8059 56.1996 16.4124 57.9999 19.3224 57.9999H30.7477C33.7947 57.9999 36.4917 56.0289 37.4171 53.1259L42.5696 36.9617M42.5696 36.9617C32.7898 36.8215 10.4174 38.2696 6.52386 31.1724V31.1724C2.52779 23.8883 14.3869 24.9613 22.5745 26.3717C28.3822 27.3721 34.8716 27.4894 39.2165 26.4426M42.5696 36.9617C44.489 34.2918 46.5054 28.4501 39.2165 26.4426M39.2165 26.4426C43.278 22.6557 40.2716 15.6919 31.9468 17.5457C31.0613 17.7429 30.0445 17.9182 28.9447 18.0632C18.25 19.4732 23.3067 12.4352 23.3067 1.64795V1.64795C26.7995 4.45304 36.2392 12.2451 33.2215 15.2746" stroke="#115099" stroke-width="2"/>
+                            <defs>
+                            <radialGradient id="paint0_radial_251_226" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(28.74 -0.788171) rotate(94.3011) scale(52.0722 52.073)">
+                            <stop offset="0.207516" stop-color="#D9D4EB"/>
+                            <stop offset="0.850611" stop-color="#D9D4EB" stop-opacity="0"/>
+                            </radialGradient>
+                            </defs>
+                        </svg>   
+                    </div>
+                </section>
+
+                <section id="skills-nav-a" class="scroll-section skills">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui maiores autem reiciendis incidunt deleniti vel dignissimos, neque, esse consectetur impedit amet nostrum, iusto debitis! Aliquid, et. Consectetur, ad atque.</p>
+                </section>
+
+                <section id="contact-nav-a" class="scroll-section call">
+                    <div class="container-header-arrow">
+                        <h4 class="header__contact">Si quieres preguntar, proponer, crear, colaborar</h4>
+                        <svg class="arrow" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="arrow" d="M31.625 11.5L31.625 46.4887L15.5537 30.4175L11.5 34.5L34.5 57.5L57.5 34.5L53.4463 30.4462L37.375 46.4887L37.375 11.5L31.625 11.5Z" fill="url(#paint0_angular_224_221)"/>
+                        </svg>
+                    </div>
+                    <form class="contact-form" action="">
+                        <input class="contact-imput" type="name" name="" id="name" placeholder="Name">
+                        <label class="hidden" for="name"></label>
+
+                        <input class="contact-imput" type="email" name="" id="email" placeholder="Email">
+                        <label class="hidden" for="email"></label>
+
+                        <input class="message contact-imput" type="message" name="" id="message" placeholder="Message">
+                        <label  class="hidden" for="message"></label>
+
+                        <span class="button-container">
+                            <button class="button" type="submit">Enviar!</button>
+                        </span>
+                    </form>
+                        
+                </section>
+        </div>
+    </main>
+</body>
+</html>

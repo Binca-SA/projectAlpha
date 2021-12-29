@@ -1,0 +1,39 @@
+
+//COLORES CORPORATIVOS//
+$corporativo-principal: #115099;
+$corporativo-secundario:#FBF9F0;
+$corporativo-terciario: #D9D4EB;
+$corporativo-cuaternario: #DCEBCE;
+
+//COLORES COMPLEMENTO//
+$darcker-blue: #002F66; //Para encabezados de las secciones
+$lighter-blue: #7799C0; //Líneas del formulario
+$gris-formulario: #948E8E;//Texto formulario
+
+//GRADIENTS background//
+$background-home:conic-gradient(from 180.11deg at 97.88% -38.04%, #D9D4EB -288.51deg, #235BA3 5.46deg, #D9D4EB 71.49deg, #235BA3 365.46deg);
+$background-body-sections: conic-gradient(from 224.06deg at 117.22% -11.07%, rgba(220, 235, 206, 0.88) -12.82deg, #002F66 32.42deg, #D9D4EB 313.99deg, rgba(220, 235, 206, 0.88) 347.18deg, #002F66 392.42deg);
+$gradient-menu: conic-gradient(from 128.59deg at 5.61% -53.33%, #235BA3  -40.43deg, #D9D4EB 200.99deg, #235BA3  319.57deg, #D9D4EB 526.99deg);
+//GRADIENTS bolas sección:fortalezas//
+$bola-diseño: radial-gradient(58.46% 50% at 50% 50%, #DCEBCE 36.57%, #FBF9F0 87.31%);
+$bola-web: radial-gradient(58.46% 50% at 50% 50%, #D9D4EB 36.57%, #FBF9F0 87.31%);
+$bola-seo:radial-gradient(58.46% 50% at 50% 50%, #D9D4EB 36.57%, #FBF9F0 87.31%);
+
+//TIPOGRAFÍA//
+$headers: PP Eiko;
+$h2-home: 'Roboto', sans-serif;
+$normal-text: 'Space Grotesk', sans-serif;
+
+/*IMPORTACIÓN TIPOGRAFÍAS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Space+Grotesk:wght@300;400;500;600&display=swap');
+@font-face {
+    font-family: PP Eiko;
+    src: url(PPEiko-Medium.otf);
+}
+
+//margin-left para headers//
+$margin-left: .4em;
+//border radius//
+$border-radius-menu: 19px;
+//padding//
+$padding:4px 8px 4px 8px; 

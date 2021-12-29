@@ -1,0 +1,74 @@
+/*SECCION HOME*/
+.home-gradient{
+    background: $background-home;
+    box-shadow: 5px 7px 21px -7px $darcker-blue;
+    display: flex;
+    flex-direction: column
+}
+/*H1*/
+.name{
+
+    margin:{
+        top:1.6em;
+        left: .4em;
+        bottom: .12em;
+    }
+    font-size: 4em;
+    color: white;
+    font-family: PP Eiko;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 97.19%;
+}
+
+.container__descripcion-profesion{
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+}
+    .descripcion__profesion{
+        display: flex;
+        gap: .4em;
+        border: 1.5px solid white;
+        border-radius: 29px;
+        padding: $padding;
+        margin:{
+            left:1.7em;
+            right:3em;
+        }
+        align-items: center;
+    }
+        .descripcion-profesion__diseñadora{
+            @include h2Style;
+        }
+        .descripcion-profesion__web-developer{
+            @include h2Style;
+            margin-left: 0;
+        }
+
+/*ENLACES A REDES SOCIALES*/
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: white;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: space-between;
+    font-family:$h2-home;
+    font-size: 15px;
+    list-style: none;
+    padding: 1.5em;
+
+}
+a:hover{
+    background-color: white;
+    color:$corporativo-principal;
+    transition-delay: ease-in;
+    border: none;
+}
+    
+    .link__redes-sociales{
+        border: 1.5px solid;
+        border-radius: 29px;
+        padding:$padding;
+    }

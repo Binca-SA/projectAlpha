@@ -1,0 +1,54 @@
+//h2 style//
+@mixin h2Style{
+    margin-top:0;
+    margin-bottom: 0;
+    font-family:$h2-home;
+    font-style: normal;
+    font-weight: normal;
+    font-size: .8em;
+    color: white;
+}
+//margenes para desktop//
+@mixin margenesDesktop{
+     margin:{
+        right:15vw;
+        left: 15vw;
+    }
+}
+//mixin flex contact//
+@mixin flexbox-contact{
+   display: flex;
+   flex-direction:row ;
+   align-items: center;
+   justify-content: center;
+    //mirar a ver q display darlepara q se pona uno al lado del otro//
+    .container-header-arrow{
+        width: 18em;
+    }
+    .arrow{
+        //la puta lechita le falla algo del tamaño, sino habra q quitarle los estilos del html//
+        transform: rotate(180);
+        width:70px;
+    }
+    .contact-form{
+        
+        /*display: flex;
+        align-items: center;
+        flex-direction: column;*/
+        min-width: 60%;
+        max-width: 80%;//nose pk hay q repetir esa medida si en mobile ya esta puesta, pero si no la pongo d problema//
+    }
+}
+//mixins para responsive--> desktop//
+@mixin desktop{
+    @media (min-width:900px) {
+        @include margenesDesktop();
+    }
+}
+//mixin para desktop--> contact//
+@mixin desktop-contact{
+    @media (min-width:900px){
+        @include flexbox-contact();
+    }
+}
+

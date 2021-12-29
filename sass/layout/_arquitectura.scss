@@ -1,0 +1,24 @@
+/*ESTRUCTURA*/
+.scroll-area{
+    overflow: hidden;
+}
+.cartas{
+    display: flex;
+    width: 400%;
+    transition: transform .1s ease-in-out;
+    overflow:hidden;
+}
+.scroll-section{
+    margin:{
+        top:35px;
+        bottom:87px;
+        left:35px;
+        right:35px;
+    }
+    width: 50%;
+    height: 80vh;
+    border-radius: 39px;
+    display: flex;
+    /*flex-direction: column;*/
+    @include desktop;
+}

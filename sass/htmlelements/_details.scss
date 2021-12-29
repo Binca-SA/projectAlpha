@@ -1,0 +1,11 @@
+/*ESTILOS ETIQUETA <DETAILS> HTML-->para secciones about y fortalezas*/
+details{
+    display: none;
+    list-style-type: none;
+
+}
+details summary::marker{
+    content:"";
+    display: none;
+    list-style-type: none;
+}

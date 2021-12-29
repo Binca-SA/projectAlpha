@@ -1,0 +1,30 @@
+/*CARACTERÍSTICAS GENERALES SITE*/
+
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    /*convertir el background en gradient animation*/
+    background-size: 400% 400%;
+    animation: gradient 15s ease-in-out infinite;
+}
+    @keyframes gradient{
+        0% {
+            background-position: 0% 400%;
+          }
+          50% {
+            background-position: 100% 400%;
+          }
+          100% {
+            background-position: 0% 400%;
+          }
+    }

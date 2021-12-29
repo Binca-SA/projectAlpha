@@ -1,0 +1,418 @@
+@charset "UTF-8";
+/*IMPORTACIÓN TIPOGRAFÍAS*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Space+Grotesk:wght@300;400;500;600&display=swap");
+@font-face {
+  font-family: PP Eiko;
+  src: url(PPEiko-Medium.otf);
+}
+/*CARACTERÍSTICAS GENERALES SITE*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  /*convertir el background en gradient animation*/
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease-in-out infinite;
+          animation: gradient 15s ease-in-out infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 400%;
+  }
+  50% {
+    background-position: 100% 400%;
+  }
+  100% {
+    background-position: 0% 400%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 400%;
+  }
+  50% {
+    background-position: 100% 400%;
+  }
+  100% {
+    background-position: 0% 400%;
+  }
+}
+/*Menu*/
+input {
+  /*para ocultar los inputs*/
+  /*opacity: 0;
+  position: absolute;*/
+  top: -10000em;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.menu {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-top: 1.5em;
+  background: conic-gradient(from 128.59deg at 5.61% -53.33%, #235BA3 -40.43deg, #D9D4EB 200.99deg, #235BA3 319.57deg, #D9D4EB 526.99deg);
+  border-radius: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+}
+@media (min-width: 900px) {
+  .menu {
+    margin-right: 15vw;
+    margin-left: 15vw;
+  }
+}
+
+.menu__label {
+  padding: 0.4em;
+  cursor: pointer;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  font-size: 0.8em;
+}
+.menu__label:hover {
+  color: #002F66;
+  background-size: #FBF9F0;
+  background-color: #FBF9F0;
+  border-radius: 19px;
+  font-weight: bold;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/*ESTRUCTURA*/
+.scroll-area {
+  overflow: hidden;
+}
+
+.cartas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400%;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  overflow: hidden;
+}
+
+.scroll-section {
+  margin-top: 35px;
+  margin-bottom: 87px;
+  margin-left: 35px;
+  margin-right: 35px;
+  width: 50%;
+  height: 80vh;
+  border-radius: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*flex-direction: column;*/
+}
+@media (min-width: 900px) {
+  .scroll-section {
+    margin-right: 15vw;
+    margin-left: 15vw;
+  }
+}
+
+/*SECCION HOME*/
+.home-gradient {
+  background: conic-gradient(from 180.11deg at 97.88% -38.04%, #D9D4EB -288.51deg, #235BA3 5.46deg, #D9D4EB 71.49deg, #235BA3 365.46deg);
+  -webkit-box-shadow: 5px 7px 21px -7px #002F66;
+          box-shadow: 5px 7px 21px -7px #002F66;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*H1*/
+.name {
+  margin-top: 1.6em;
+  margin-left: 0.4em;
+  margin-bottom: 0.12em;
+  font-size: 4em;
+  color: white;
+  font-family: PP Eiko;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 97.19%;
+}
+
+.container__descripcion-profesion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.descripcion__profesion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.4em;
+  border: 1.5px solid white;
+  border-radius: 29px;
+  padding: 4px 8px 4px 8px;
+  margin-left: 1.7em;
+  margin-right: 3em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.descripcion-profesion__diseñadora {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+  color: white;
+}
+
+.descripcion-profesion__web-developer {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+  color: white;
+  margin-left: 0;
+}
+
+/*ENLACES A REDES SOCIALES*/
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.redes-sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  list-style: none;
+  padding: 1.5em;
+}
+
+a:hover {
+  background-color: white;
+  color: #115099;
+  -webkit-transition-delay: ease-in;
+          transition-delay: ease-in;
+  border: none;
+}
+
+.link__redes-sociales {
+  border: 1.5px solid;
+  border-radius: 29px;
+  padding: 4px 8px 4px 8px;
+}
+
+/*SECCIÓN-- ABOUT ME*/
+/*SECCIÓN CONTACTO*/
+.call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 900px) {
+  .call {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .call .container-header-arrow {
+    width: 18em;
+  }
+  .call .arrow {
+    -webkit-transform: rotate(180);
+            transform: rotate(180);
+    width: 70px;
+  }
+  .call .contact-form {
+    /*display: flex;
+    align-items: center;
+    flex-direction: column;*/
+    min-width: 60%;
+    max-width: 80%;
+  }
+}
+
+.container-header-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__contact {
+  font-size: 3em;
+  font-family: PP Eiko;
+  line-height: 110%;
+  color: #002F66;
+  margin-left: 0.4em;
+  margin-top: 1em;
+  margin-bottom: 0;
+  max-width: 18em;
+}
+
+.arrow {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 80px;
+  margin-right: 2em;
+  -webkit-transform: rotate(90);
+          transform: rotate(90);
+  fill: #002F66;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*justify-content: center;*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 4em;
+}
+
+.contact-imput {
+  min-width: 80%;
+  /*max-width: 100%;*/
+  height: 3rem;
+  margin-bottom: 1em;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom: 1.5px solid #7799C0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/*SECCIONES*/
+/*BOTÓN ENVIAR, SECCIÓN CONTACTO*/
+.button {
+  border-radius: 36px;
+  border: none;
+  background-color: #DCEBCE;
+  font-size: 12px;
+  font-family: "Space Grotesk", sans-serif;
+  height: 30px;
+  width: 122px;
+  color: #002F66;
+  margin-top: 2em;
+}
+
+/*ESTILOS ETIQUETA <DETAILS> HTML-->para secciones about y fortalezas*/
+details {
+  display: none;
+  list-style-type: none;
+}
+
+details summary::marker {
+  content: "";
+  display: none;
+  list-style-type: none;
+}
+
+/*funcionamiento de la transición de las secciones: ABOUT, FORTALEZAS, CONTACTO*/
+.home_input:checked ~ .cartas {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.about_input:checked ~ .cartas {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+
+.skills_input:checked ~ .cartas {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.contact_input:checked ~ .cartas {
+  -webkit-transform: translateX(-75%);
+          transform: translateX(-75%);
+}
+
+/*background-color secciones*/
+.about, .skills, .call {
+  background-color: #FBF9F0;
+}
+
+.about, .skills {
+  overflow-y: scroll;
+}

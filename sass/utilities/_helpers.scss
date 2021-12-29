@@ -1,0 +1,10 @@
+/*background-color secciones*/
+.about, .skills, .call{
+    background-color: $corporativo-secundario;
+    
+}
+
+.about, .skills{
+    overflow-y: scroll;
+}
+//hacer helper para poner bold en algunas frases//
