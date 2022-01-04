@@ -10,9 +10,63 @@
 }
 //margenes para desktop//
 @mixin margenesDesktop{
-     margin:{
+     margin: {
         right:15vw;
         left: 15vw;
+    }
+}
+//mixin para estilos headers//
+@mixin estilo-headers{
+    font-family: $headers;
+    color: $darcker-blue;
+    font-size: 25px;
+}
+//ABOUT//
+//mixin padding seccion about para desktop//
+@mixin padding-about{
+    @media (min-width:900px){
+        padding: {
+            left: 100px;
+            right: 100px;
+        }
+    }
+}
+//mixin para margenes en desktop seccion about//
+@mixin margin-about-desktop{
+    @media (min-width:900px){
+        margin: {
+            left:$margin-intro-about;
+            right:$margin-intro-about;
+        }
+    }
+}
+//mixin para tamaño imagen en desktop//
+@mixin imagen-about{
+    @media (min-width:900px){
+        width:500px ;
+        height: 700px;
+    }
+}
+//mixin para texto en desktop//
+@mixin frase-motivadora-desktop{
+    @media (min-width:900px) {
+        margin-left:450px ;
+        margin-top: 0;
+    }
+}
+
+//mixin frase motivadora en en tablet//
+@mixin frase-motivadora-tablet{
+    @media (min-width:700px) {
+        margin-left:250px ;
+        margin-top: 0;
+    }
+}
+//mixin para cambiar a row en desktop los dos ultimos parrafos del about//
+@mixin direccion-row{
+    @media (min-width:700px) {
+        flex-direction: row;
+        margin-top: 2em;
     }
 }
 //mixin flex contact//
@@ -21,17 +75,18 @@
    flex-direction:row ;
    align-items: center;
    justify-content: center;
-    //mirar a ver q display darlepara q se pona uno al lado del otro//
+   .call{
+       overflow-y: hidden;//para quitar scroll en desktop, pero no funciona//
+   }
     .container-header-arrow{
         width: 18em;
     }
     .arrow{
-        //la puta lechita le falla algo del tamaño, sino habra q quitarle los estilos del html//
+        //la puta flechita le falla algo del tamaño, sino habra q quitarle los estilos del html//
         transform: rotate(180);
         width:70px;
     }
     .contact-form{
-        
         /*display: flex;
         align-items: center;
         flex-direction: column;*/

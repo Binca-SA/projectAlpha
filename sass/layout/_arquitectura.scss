@@ -18,7 +18,7 @@
     width: 50%;
     height: 80vh;
     border-radius: 39px;
-    display: flex;
+    /*display: flex;*///nose pk si activo esto hace q no se vea la imagen del about//
     /*flex-direction: column;*/
     @include desktop;
 }

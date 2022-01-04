@@ -1,1 +1,88 @@
 /*SECCIÓN-- ABOUT ME*/
+.about{
+    /*display: flex;*///nose pk esto hace q no se vea la imagen//
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: $normal-text;
+    @include padding-about;
+}
+    .header__about{
+        @include estilo-headers;
+        margin: {
+            left: 1.7em;
+            right: 1.7em;
+        }
+    @include  margin-about-desktop;
+    }
+    
+    .frase__pequeña{
+        margin: {
+            left: 1.7em;
+            right: 1.7em;
+        }
+    @include  margin-about-desktop;    
+    }
+    .imagen-frasemotiv{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+        .imagen__about{
+            border-radius:156px 0 156px 11px;
+            width: 312px;
+            height: 459px;
+            @include imagen-about;
+            background-image: url(/images/imagen-about.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto;
+            grid-column: 2 / 4;
+            grid-row: 1 / 4;
+        }
+            
+        .frase__motivadora{
+            @include estilo-headers;
+            line-height: 103%;
+            //tengo q poner texto encima de la imagen//
+            grid-column: 2 / 4;
+            grid-row: 3 / 4;
+            margin-left:100px ;
+            margin-top: 52px;
+            //mirar a ver si esta bien echo eso de poner margins y lo del grid//
+            @include frase-motivadora-tablet;
+            @include frase-motivadora-desktop;
+            
+        }
+    .frase__motivadora, .etapa__universitaria, .frase__creadora{
+        text-align: left;
+    }
+    .universidad-creadora{
+        display: flex;
+        flex-direction: column;
+        @include direccion-row;
+    }
+        .etapa__universitaria, .frase__creadora{
+            margin: {
+                left: 1.7em;
+                right: 1.7em;
+            }
+        }
+        .frase-despedida{
+            margin: {
+                left: 2em;
+                right: 2em;
+                top: 3em;
+            }
+        }
+
+    .icon__cafe{
+        margin: {
+            left: 1.5em;
+            right: 1.5em;
+        }
+    }
+
+    
+    

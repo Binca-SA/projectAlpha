@@ -139,9 +139,7 @@ input {
   width: 50%;
   height: 80vh;
   border-radius: 39px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
   /*flex-direction: column;*/
 }
 @media (min-width: 900px) {
@@ -260,6 +258,208 @@ a:hover {
 }
 
 /*SECCIÓN-- ABOUT ME*/
+.about {
+  /*display: flex;*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+@media (min-width: 900px) {
+  .about {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.header__about {
+  font-family: PP Eiko;
+  color: #002F66;
+  font-size: 25px;
+  margin-left: 1.7em;
+  margin-right: 1.7em;
+}
+@media (min-width: 900px) {
+  .header__about {
+    margin-left: 8em;
+    margin-right: 8em;
+  }
+}
+
+.frase__pequeña {
+  margin-left: 1.7em;
+  margin-right: 1.7em;
+}
+@media (min-width: 900px) {
+  .frase__pequeña {
+    margin-left: 8em;
+    margin-right: 8em;
+  }
+}
+
+.imagen-frasemotiv {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.imagen-frasemotiv > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.imagen-frasemotiv > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.imagen-frasemotiv > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.imagen-frasemotiv > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+
+.imagen-frasemotiv > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.imagen-frasemotiv > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+
+.imagen-frasemotiv > *:nth-child(7) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+
+.imagen-frasemotiv > *:nth-child(8) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+}
+
+.imagen-frasemotiv > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.imagen-frasemotiv > *:nth-child(10) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+
+.imagen-frasemotiv > *:nth-child(11) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.imagen-frasemotiv > *:nth-child(12) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+}
+
+.imagen__about {
+  border-radius: 156px 0 156px 11px;
+  width: 312px;
+  height: 459px;
+  background-image: url(/images/imagen-about.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+}
+@media (min-width: 900px) {
+  .imagen__about {
+    width: 500px;
+    height: 700px;
+  }
+}
+
+.frase__motivadora {
+  font-family: PP Eiko;
+  color: #002F66;
+  font-size: 25px;
+  line-height: 103%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  margin-left: 100px;
+  margin-top: 52px;
+}
+@media (min-width: 700px) {
+  .frase__motivadora {
+    margin-left: 250px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 900px) {
+  .frase__motivadora {
+    margin-left: 450px;
+    margin-top: 0;
+  }
+}
+
+.frase__motivadora, .etapa__universitaria, .frase__creadora {
+  text-align: left;
+}
+
+.universidad-creadora {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 700px) {
+  .universidad-creadora {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 2em;
+  }
+}
+
+.etapa__universitaria, .frase__creadora {
+  margin-left: 1.7em;
+  margin-right: 1.7em;
+}
+
+.frase-despedida {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 3em;
+}
+
+.icon__cafe {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
 /*SECCIÓN CONTACTO*/
 .call {
   display: -webkit-box;
@@ -285,6 +485,9 @@ a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .call .call {
+    overflow-y: hidden;
   }
   .call .container-header-arrow {
     width: 18em;
@@ -376,17 +579,16 @@ a:hover {
 }
 
 /*ESTILOS ETIQUETA <DETAILS> HTML-->para secciones about y fortalezas*/
-details {
-  display: none;
-  list-style-type: none;
-}
+/*details{
+    display: none;
+    list-style-type: none;
 
-details summary::marker {
-  content: "";
-  display: none;
-  list-style-type: none;
 }
-
+details::marker{
+    content:"hola";
+    display: none;
+    list-style-type: none;
+}*/
 /*funcionamiento de la transición de las secciones: ABOUT, FORTALEZAS, CONTACTO*/
 .home_input:checked ~ .cartas {
   -webkit-transform: translateX(0);
@@ -413,6 +615,6 @@ details summary::marker {
   background-color: #FBF9F0;
 }
 
-.about, .skills {
+.about, .skills, .call {
   overflow-y: scroll;
 }
