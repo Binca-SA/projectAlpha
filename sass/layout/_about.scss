@@ -5,7 +5,7 @@
     justify-content: center;
     text-align: center;
     font-family: $normal-text;
-    @include padding-about;
+    /*@include padding-about;*///peligroso, jode tamaño cartas
 }
     .header__about{
         @include estilo-headers;
@@ -13,7 +13,7 @@
             left: 1.7em;
             right: 1.7em;
         }
-    @include  margin-about-desktop;
+        @include  margin-about-desktop;
     }
     
     .frase__pequeña{
@@ -21,11 +21,14 @@
             left: 1.7em;
             right: 1.7em;
         }
-    @include  margin-about-desktop;    
+        font-size: $font-size;
+        @include  margin-about-desktop;    
+        @include tipografia-desktop;
     }
+
     .imagen-frasemotiv{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
         .imagen__about{
@@ -38,44 +41,49 @@
             background-repeat: no-repeat;
             background-position: center;
             margin: 0 auto;
-            grid-column: 2 / 4;
-            grid-row: 1 / 4;
+            grid-column: 2/4;
+            grid-row: 1/4;
         }
             
         .frase__motivadora{
             @include estilo-headers;
             line-height: 103%;
             //tengo q poner texto encima de la imagen//
-            grid-column: 2 / 4;
-            grid-row: 3 / 4;
-            margin-left:100px ;
+            grid-column: 2/4;
+            grid-row: 3/4;
+            margin-left:100px;
             margin-top: 52px;
+            text-align: left;
             //mirar a ver si esta bien echo eso de poner margins y lo del grid//
             @include frase-motivadora-tablet;
-            @include frase-motivadora-desktop;
-            
+            @include frase-motivadora-desktop;     
         }
-    .frase__motivadora, .etapa__universitaria, .frase__creadora{
-        text-align: left;
-    }
-    .universidad-creadora{
+    
+    .contenedor-universidad-creadora{
         display: flex;
         flex-direction: column;
         @include direccion-row;
+        
     }
         .etapa__universitaria, .frase__creadora{
             margin: {
                 left: 1.7em;
                 right: 1.7em;
             }
+            text-align: left;
+            font-size: $font-size;
+            @include tipografia-desktop;
         }
-        .frase-despedida{
-            margin: {
-                left: 2em;
-                right: 2em;
-                top: 3em;
-            }
+    
+    .frase-despedida{
+        font-size: $font-size;
+        margin: {
+            left: 2em;
+            right: 2em;
+            top: 3em;
+            bottom: 2em;
         }
+    }
 
     .icon__cafe{
         margin: {

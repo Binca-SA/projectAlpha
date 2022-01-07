@@ -1,4 +1,4 @@
-/*SECCIÓN CONTACTO*/
+/*SECCIÓN-- CONTACT*/
 .call{
     @include desktop-contact;
     display: flex;
@@ -15,7 +15,7 @@
             font-family: $headers;
             line-height: 110%;
             color: $darcker-blue;
-            margin:{
+            margin: {
                 left:$margin-left;
                 top:1em;
                 bottom: 0;

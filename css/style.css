@@ -149,7 +149,7 @@ input {
   }
 }
 
-/*SECCION HOME*/
+/*SECCIÓN-- HOME*/
 .home-gradient {
   background: conic-gradient(from 180.11deg at 97.88% -38.04%, #D9D4EB -288.51deg, #235BA3 5.46deg, #D9D4EB 71.49deg, #235BA3 365.46deg);
   -webkit-box-shadow: 5px 7px 21px -7px #002F66;
@@ -269,18 +269,13 @@ a:hover {
           justify-content: center;
   text-align: center;
   font-family: "Space Grotesk", sans-serif;
-}
-@media (min-width: 900px) {
-  .about {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
+  /*@include padding-about;*/
 }
 
 .header__about {
   font-family: PP Eiko;
   color: #002F66;
-  font-size: 25px;
+  font-size: 26px;
   margin-left: 1.7em;
   margin-right: 1.7em;
 }
@@ -294,11 +289,17 @@ a:hover {
 .frase__pequeña {
   margin-left: 1.7em;
   margin-right: 1.7em;
+  font-size: 14px;
 }
 @media (min-width: 900px) {
   .frase__pequeña {
     margin-left: 8em;
     margin-right: 8em;
+  }
+}
+@media (min-width: 700px) {
+  .frase__pequeña {
+    font-size: 16px;
   }
 }
 
@@ -397,7 +398,7 @@ a:hover {
 .frase__motivadora {
   font-family: PP Eiko;
   color: #002F66;
-  font-size: 25px;
+  font-size: 26px;
   line-height: 103%;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -407,6 +408,7 @@ a:hover {
   grid-row: 3/4;
   margin-left: 100px;
   margin-top: 52px;
+  text-align: left;
 }
 @media (min-width: 700px) {
   .frase__motivadora {
@@ -421,11 +423,7 @@ a:hover {
   }
 }
 
-.frase__motivadora, .etapa__universitaria, .frase__creadora {
-  text-align: left;
-}
-
-.universidad-creadora {
+.contenedor-universidad-creadora {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,24 +433,34 @@ a:hover {
           flex-direction: column;
 }
 @media (min-width: 700px) {
-  .universidad-creadora {
+  .contenedor-universidad-creadora {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 2em;
+    margin-right: 5em;
+    margin-left: 5em;
   }
 }
 
 .etapa__universitaria, .frase__creadora {
   margin-left: 1.7em;
   margin-right: 1.7em;
+  text-align: left;
+  font-size: 14px;
+}
+@media (min-width: 700px) {
+  .etapa__universitaria, .frase__creadora {
+    font-size: 16px;
+  }
 }
 
 .frase-despedida {
+  font-size: 14px;
   margin-left: 2em;
   margin-right: 2em;
   margin-top: 3em;
+  margin-bottom: 2em;
 }
 
 .icon__cafe {
@@ -460,7 +468,248 @@ a:hover {
   margin-right: 1.5em;
 }
 
-/*SECCIÓN CONTACTO*/
+/*SECCIÓN-- FORTALEZAS*/
+.container-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 0.25fr 0.5fr;
+  grid-template-rows: 0.25fr 0.5fr;
+}
+.container-header > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.container-header > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.container-header > *:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.container-header > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+@media (min-width: 900px) {
+  .container-header {
+    margin-left: 5em;
+  }
+  .container-header .header__skills {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    margin-top: 1.5em;
+  }
+  .container-header .container-parrafos {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+  }
+  .container-header .container-ilustracion {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: none;
+  }
+}
+
+.header__skills {
+  font-family: PP Eiko;
+  color: #002F66;
+  font-size: 26px;
+  margin-right: 1em;
+  margin-top: 1em;
+  margin-left: 1.5em;
+  margin-bottom: 0;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.container-parrafos {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+}
+
+.container-ilustracion {
+  background-image: url(/images/ilustracion-fortalezas.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 261px;
+  height: 318px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-top: 3em;
+  margin-right: 2.5em;
+}
+
+.p__header-skills {
+  margin-left: 2.4em;
+  margin-right: 1.5em;
+}
+
+/*segundo encabezado sección FORTALEZAS*/
+.container-skills-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 900px) {
+  .container-skills-arrow {
+    margin-right: 25em;
+    margin-left: 5em;
+  }
+}
+
+.margin {
+  margin-left: 1.5em;
+  margin-top: 1.8em;
+}
+
+/*container donde va cada fortaleza*/
+.container-contenido-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .container-contenido-skills {
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-bottom: 4em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 4em 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 4em;
+    justify-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .container-contenido-skills > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .container-contenido-skills > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .container-contenido-skills > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .container-contenido-skills > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .container-contenido-skills > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .container-contenido-skills > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .container-contenido-skills .container-diseño {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .container-contenido-skills .container-web {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .container-contenido-skills .container-seo {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+/*estilos a cada fortaleza*/
+.container-diseño {
+  width: 281px;
+  height: 281px;
+  background: radial-gradient(58.46% 50% at 50% 50%, #DCEBCE 36.57%, #FBF9F0 87.31%);
+  margin-bottom: 2em;
+}
+
+.container-web {
+  width: 281px;
+  height: 281px;
+  background: radial-gradient(58.46% 50% at 50% 50%, #D9D4EB 36.57%, #FBF9F0 87.31%);
+}
+
+.container-seo {
+  width: 281px;
+  height: 281px;
+  background: radial-gradient(58.46% 50% at 50% 50%, rgba(68, 130, 202, 0.62) 0%, #FBF9F0 82.6%);
+}
+
+.title__skill {
+  font-family: PP Eiko;
+  color: #002F66;
+  font-size: 26px;
+  font-size: 23px;
+  margin-top: 2em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+/*SECCIÓN-- CONTACT*/
 .call {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,7 +770,7 @@ a:hover {
   font-family: PP Eiko;
   line-height: 110%;
   color: #002F66;
-  margin-left: 0.4em;
+  margin-left: 0.7em;
   margin-top: 1em;
   margin-bottom: 0;
   max-width: 18em;
@@ -610,11 +859,18 @@ details::marker{
           transform: translateX(-75%);
 }
 
-/*background-color secciones*/
+/*background-color secciones y tipografía base*/
 .about, .skills, .call {
   background-color: #FBF9F0;
-}
-
-.about, .skills, .call {
+  font-family: "Space Grotesk", sans-serif;
   overflow-y: scroll;
+}
+.about::-webkit-scrollbar, .skills::-webkit-scrollbar, .call::-webkit-scrollbar {
+  height: 10px;
+  width: 5px;
+}
+.about::-webkit-scrollbar-thumb, .skills::-webkit-scrollbar-thumb, .call::-webkit-scrollbar-thumb {
+  background: transparent;
+  /*si la pongo en color se ve fea, nose si dejarla en color o transparent*/
+  border-radius: 20px;
 }

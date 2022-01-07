@@ -1,4 +1,4 @@
-/*SECCION HOME*/
+/*SECCIÓN-- HOME*/
 .home-gradient{
     background: $background-home;
     box-shadow: 5px 7px 21px -7px $darcker-blue;
@@ -7,8 +7,7 @@
 }
 /*H1*/
 .name{
-
-    margin:{
+    margin: {
         top:1.6em;
         left: .4em;
         bottom: .12em;
@@ -32,7 +31,7 @@
         border: 1.5px solid white;
         border-radius: 29px;
         padding: $padding;
-        margin:{
+        margin: {
             left:1.7em;
             right:3em;
         }

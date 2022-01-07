@@ -15,10 +15,9 @@ $background-home:conic-gradient(from 180.11deg at 97.88% -38.04%, #D9D4EB -288.5
 $background-body-sections: conic-gradient(from 224.06deg at 117.22% -11.07%, rgba(220, 235, 206, 0.88) -12.82deg, #002F66 32.42deg, #D9D4EB 313.99deg, rgba(220, 235, 206, 0.88) 347.18deg, #002F66 392.42deg);
 $gradient-menu: conic-gradient(from 128.59deg at 5.61% -53.33%, #235BA3  -40.43deg, #D9D4EB 200.99deg, #235BA3  319.57deg, #D9D4EB 526.99deg);
 //GRADIENTS bolas sección:fortalezas//
-$bola-diseño: radial-gradient(58.46% 50% at 50% 50%, #111310 36.57%, #FBF9F0 87.31%);
+$bola-diseño: radial-gradient(58.46% 50% at 50% 50%, #DCEBCE 36.57%, #FBF9F0 87.31%);
 $bola-web: radial-gradient(58.46% 50% at 50% 50%, #D9D4EB 36.57%, #FBF9F0 87.31%);
-$bola-seo:radial-gradient(58.46% 50% at 50% 50%, #D9D4EB 36.57%, #FBF9F0 87.31%);
-
+$bola-seo: radial-gradient(58.46% 50% at 50% 50%, rgba(68, 130, 202, 0.62) 0%, #FBF9F0 82.6%);
 //TIPOGRAFÍA//
 $headers: PP Eiko;
 $h2-home: 'Roboto', sans-serif;
@@ -32,10 +31,16 @@ $normal-text: 'Space Grotesk', sans-serif;
 }
 
 //margin-left para headers//
-$margin-left: .4em;
+$margin-left: .7em;
 //border radius//
 $border-radius-menu: 19px;
 //padding//
 $padding:4px 8px 4px 8px; 
 //margin para parrafos de introduccion de la seccion about//
 $margin-intro-about: 8em;
+//font size//
+$font-size:14px;
+//font-weight//
+$bold: bolder;
+//ancho y alto de las bolas seccion fortalezas//
+$medida-bola: 281px;
