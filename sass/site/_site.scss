@@ -1,5 +1,4 @@
 /*CARACTERÍSTICAS GENERALES SITE*/
-
 *{
     box-sizing: border-box;
 }
@@ -17,6 +16,7 @@ body{
     background-size: 400% 400%;
     animation: gradient 15s ease-in-out infinite;
 }
+    /*Animación de del gradiente*/
     @keyframes gradient{
         0% {
             background-position: 0% 400%;

@@ -14,6 +14,7 @@
         right:15vw;
         left: 15vw;
     }
+    position: inherit;
 }
 //mixin para estilos headers//
 @mixin estilo-headers{
@@ -21,9 +22,21 @@
     color: $darcker-blue;
     font-size: 26px;
 }
-
+////////////////HOME////////////////
+@mixin tipografía-home-desktop{
+    @media (min-width:900px){
+        .name{
+            font-size: 5.5em;
+        }
+        .descripcion__profesion{
+            font-size: 23px;
+        }
+        .redes-sociales{
+            font-size: 17px;
+        }
+    }
+}
 ////////////////ABOUT////////////////
-
 //mixin padding seccion about para desktop//
 @mixin padding-about{
     @media (min-width:900px){
@@ -120,8 +133,8 @@
             bottom: 4em;
         }
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         row-gap: 4em;
         justify-items: center;
         justify-content: space-evenly;
@@ -141,11 +154,9 @@
         }  
     }
 }
-
-
 ////////////////CONTACT////////////////
 //mixin flex contact//
-@mixin flexbox-contact{//mirar este mixin q esta raro//
+@mixin flexbox-contact{
    display: flex;
    flex-direction:row ;
    align-items: center;
@@ -157,8 +168,7 @@
         width: 18em;
     }
     .arrow{
-        //la puta flechita le falla algo del tamaño, sino habra q quitarle los estilos del html//
-        transform: rotate(180);
+        transform: rotate(250);//no obedece a esto//
         width:70px;
     }
     .contact-form{

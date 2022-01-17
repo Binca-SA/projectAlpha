@@ -13,7 +13,7 @@ input{
     border: 0;
 }
 .menu{
-    margin:{
+    margin: {
         right: 2em;
         left:2em;
         top:1.5em;
@@ -28,11 +28,17 @@ input{
     font-family: $normal-text;
     color: white;
     @include desktop;
+    /*para que em mobil este abajo el menú*/
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
     .menu__label{ 
         padding: .4em;
         cursor: pointer;
-        margin:{
+        margin: {
             top:.2em;
             bottom:.2em;
         }
@@ -47,3 +53,22 @@ input{
             transition: 0.2s;
         }
     }
+    //prueba, para cuando el label esta checked//
+    // .menu__label-checked{
+    //         color: $darcker-blue;
+    //         background-size:$corporativo-secundario;
+    //         background-color: $corporativo-secundario;
+    //         border-radius:19px;//$border-radius-menu;//
+    //         font-weight: bold;
+    //         opacity: 1;
+    //         transition: 0.2s;
+    // }
+    .menu__label:focus{
+                color: $darcker-blue;
+                background-size:$corporativo-secundario;
+                background-color: $corporativo-secundario;
+                border-radius:19px;//$border-radius-menu;//
+                font-weight: bold;
+                opacity: 1;
+                transition: 0.2s;
+        }

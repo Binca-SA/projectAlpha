@@ -3,10 +3,12 @@
     background: $background-home;
     box-shadow: 5px 7px 21px -7px $darcker-blue;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    @include  tipografía-home-desktop;
 }
 /*H1*/
 .name{
+    display: flex;
     margin: {
         top:1.6em;
         left: .4em;
@@ -36,6 +38,7 @@
             right:3em;
         }
         align-items: center;
+        gap: .5em;
     }
         .descripcion-profesion__diseñadora{
             @include h2Style;

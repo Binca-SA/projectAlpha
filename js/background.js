@@ -1,5 +1,6 @@
 
 change = () => {
+    //PARA CAMBIAR BACKGROUND A GRADIENT CUANDO ESTAS EN TODAS LAS SECCIONES MENOS EN HOME//
     const opacity = 'FF'
 
     const primary = `#FBF9F0${opacity}`
@@ -17,4 +18,5 @@ change = () => {
     else {
         document.body.style.backgroundImage = secundary
     }
+
 }

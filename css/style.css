@@ -28,6 +28,7 @@ body {
           animation: gradient 15s ease-in-out infinite;
 }
 
+/*Animación de del gradiente*/
 @-webkit-keyframes gradient {
   0% {
     background-position: 0% 400%;
@@ -39,7 +40,6 @@ body {
     background-position: 0% 400%;
   }
 }
-
 @keyframes gradient {
   0% {
     background-position: 0% 400%;
@@ -88,11 +88,18 @@ input {
       justify-content: space-around;
   font-family: "Space Grotesk", sans-serif;
   color: white;
+  /*para que em mobil este abajo el menú*/
+  position: absolute;
+  bottom: 2em;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 @media (min-width: 900px) {
   .menu {
     margin-right: 15vw;
     margin-left: 15vw;
+    position: inherit;
   }
 }
 
@@ -114,20 +121,32 @@ input {
   transition: 0.2s;
 }
 
-/*ESTRUCTURA*/
+.menu__label:focus {
+  color: #002F66;
+  background-size: #FBF9F0;
+  background-color: #FBF9F0;
+  border-radius: 19px;
+  font-weight: bold;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/*Arquitectura de la página- estrcutura base de la página web*/
 .scroll-area {
   overflow: hidden;
 }
 
 .cartas {
+  /*detro de cartas se encuntra cada sección*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 400%;
-  -webkit-transition: -webkit-transform 0.1s ease-in-out;
-  transition: -webkit-transform 0.1s ease-in-out;
-  transition: transform 0.1s ease-in-out;
-  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   overflow: hidden;
 }
 
@@ -146,6 +165,7 @@ input {
   .scroll-section {
     margin-right: 15vw;
     margin-left: 15vw;
+    position: inherit;
   }
 }
 
@@ -162,9 +182,23 @@ input {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (min-width: 900px) {
+  .home-gradient .name {
+    font-size: 5.5em;
+  }
+  .home-gradient .descripcion__profesion {
+    font-size: 23px;
+  }
+  .home-gradient .redes-sociales {
+    font-size: 17px;
+  }
+}
 
 /*H1*/
 .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 1.6em;
   margin-left: 0.4em;
   margin-bottom: 0.12em;
@@ -201,6 +235,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 0.5em;
 }
 
 .descripcion-profesion__diseñadora {
@@ -306,10 +341,10 @@ a:hover {
 .imagen-frasemotiv {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .imagen-frasemotiv > *:nth-child(1) {
@@ -618,10 +653,10 @@ a:hover {
     margin-bottom: 4em;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: 1fr 4em 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
     row-gap: 4em;
     justify-items: center;
     -webkit-box-pack: space-evenly;
@@ -683,20 +718,20 @@ a:hover {
 .container-diseño {
   width: 281px;
   height: 281px;
-  background: radial-gradient(58.46% 50% at 50% 50%, #DCEBCE 36.57%, #FBF9F0 87.31%);
+  background: radial-gradient(58.46% 50% at 50% 50%, #DCEBCE 36.57%, #FBF9F000 87.31%);
   margin-bottom: 2em;
 }
 
 .container-web {
   width: 281px;
   height: 281px;
-  background: radial-gradient(58.46% 50% at 50% 50%, #D9D4EB 36.57%, #FBF9F0 87.31%);
+  background: radial-gradient(58.46% 50% at 50% 50%, #D9D4EB 36.57%, #FBF9F000 87.31%);
 }
 
 .container-seo {
   width: 281px;
   height: 281px;
-  background: radial-gradient(58.46% 50% at 50% 50%, rgba(68, 130, 202, 0.62) 0%, #FBF9F0 82.6%);
+  background: radial-gradient(58.46% 50% at 50% 50%, rgba(68, 130, 202, 0.62) 0%, #FBF9F000 82.6%, #FBF9F000 100%);
 }
 
 .title__skill {
@@ -742,8 +777,8 @@ a:hover {
     width: 18em;
   }
   .call .arrow {
-    -webkit-transform: rotate(180);
-            transform: rotate(180);
+    -webkit-transform: rotate(250);
+            transform: rotate(250);
     width: 70px;
   }
   .call .contact-form {
@@ -813,7 +848,6 @@ a:hover {
   font-family: "Space Grotesk", sans-serif;
 }
 
-/*SECCIONES*/
 /*BOTÓN ENVIAR, SECCIÓN CONTACTO*/
 .button {
   border-radius: 36px;
@@ -825,19 +859,19 @@ a:hover {
   width: 122px;
   color: #002F66;
   margin-top: 2em;
+  font-weight: bolder;
 }
 
 /*ESTILOS ETIQUETA <DETAILS> HTML-->para secciones about y fortalezas*/
-/*details{
-    display: none;
-    list-style-type: none;
-
+.details__about {
+  list-style-type: none;
 }
-details::marker{
-    content:"hola";
-    display: none;
-    list-style-type: none;
-}*/
+
+.summary__about::marker {
+  content: url(/images/icon-plus.svg);
+  list-style-type: none;
+}
+
 /*funcionamiento de la transición de las secciones: ABOUT, FORTALEZAS, CONTACTO*/
 .home_input:checked ~ .cartas {
   -webkit-transform: translateX(0);
@@ -864,6 +898,8 @@ details::marker{
   background-color: #FBF9F0;
   font-family: "Space Grotesk", sans-serif;
   overflow-y: scroll;
+  overflow-x: hidden;
+  /*darle estilos al scroll*/
 }
 .about::-webkit-scrollbar, .skills::-webkit-scrollbar, .call::-webkit-scrollbar {
   height: 10px;

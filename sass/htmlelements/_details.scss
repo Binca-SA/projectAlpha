@@ -1,12 +1,10 @@
 /*ESTILOS ETIQUETA <DETAILS> HTML-->para secciones about y fortalezas*/
-/*details{
-    display: none;
+.details__about{
     list-style-type: none;
-
 }
-details::marker{
-    content:"hola";
-    display: none;
+
+.summary__about::marker{
+    content:url(/images/icon-plus.svg);
     list-style-type: none;
-}*/
+}
 

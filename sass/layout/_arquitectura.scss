@@ -1,15 +1,17 @@
-/*ESTRUCTURA*/
+/*Arquitectura de la página- estrcutura base de la página web*/
 .scroll-area{
     overflow: hidden;
 }
+
 .cartas{
+    /*detro de cartas se encuntra cada sección*/
     display: flex;
     width: 400%;
-    transition: transform .1s ease-in-out;
+    transition: transform .3s ease-in-out;
     overflow:hidden;
 }
 .scroll-section{
-    margin:{
+    margin: {
         top:35px;
         bottom:87px;
         left:35px;

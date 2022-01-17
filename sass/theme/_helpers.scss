@@ -3,16 +3,16 @@
     background-color: $corporativo-secundario;
     font-family: $normal-text;
     overflow-y: scroll;
+    overflow-x: hidden;
+    /*darle estilos al scroll*/
     &::-webkit-scrollbar{
         height: 10px;
-        width: 5px;
-        
+        width: 5px;  
     }
     &::-webkit-scrollbar-thumb{
         background:transparent;/*si la pongo en color se ve fea, nose si dejarla en color o transparent*/
         border-radius: 20px;
     }
-
 }
 
 
