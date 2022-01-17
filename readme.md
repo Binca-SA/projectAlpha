@@ -1,4 +1,4 @@
-#PROYECTO ALPHA - About Binca
+<h1>PROYECTO ALPHA - About Binca</h1>
 
 ##DESCRIPCIÓN DEL PROYECTO
     **One page de presentación personal y profesional. En el que se trata: una breve presentación de la profesional, a qué se dedica y cómo contactarla**
