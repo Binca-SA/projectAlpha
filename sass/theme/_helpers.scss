@@ -1,5 +1,6 @@
 /*background-color secciones y tipografía base*/
 .about, .skills, .call{
+    @include font-desktop-headers;
     background-color: $corporativo-secundario;
     font-family: $normal-text;
     overflow-y: scroll;

@@ -14,17 +14,17 @@ body{
     overflow: hidden;
     /*convertir el background en gradient animation*/
     background-size: 400% 400%;
-    animation: gradient 15s ease-in-out infinite;
+    animation: gradient 30s ease-in-out infinite;
 }
     /*Animación de del gradiente*/
     @keyframes gradient{
         0% {
-            background-position: 0% 400%;
+            background-position: 0% 500%;
           }
           50% {
-            background-position: 100% 400%;
+            background-position: 100% 500%;
           }
           100% {
-            background-position: 0% 400%;
+            background-position: 0% 500%;
           }
     }

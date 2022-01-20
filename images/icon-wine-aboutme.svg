@@ -1,8 +1,8 @@
-<svg width="38" height="82" viewBox="0 0 38 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="18.5" cy="18.5" r="18.5" fill="url(#paint0_radial_251_223)"/>
-<path d="M33.7614 1.44247C20.1198 0.555826 -4.96546 0.403831 3.82576 6.88897C5.97302 7.9445 15.421 9.19424 36.0349 5.74901C38.2664 15.4598 38.0559 35.0841 19.3619 35.8948C14.7305 35.4304 6.95821 37.5921 12.9201 49.9544C20.3724 65.4073 21.3829 73.767 19.3619 75.287C17.3409 76.8069 6.60454 78.7069 3.95202 77.6936C1.29949 76.6803 31.993 72.1204 32.2456 77.6936C32.4477 82.1521 12.9622 81.1557 3.19415 80.1002" stroke="#115099" stroke-width="2"/>
+<svg width="385" height="385" viewBox="0 0 385 385" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="196.5" cy="115.5" r="60.5" fill="url(#paint0_radial_251_194)"/>
+<path d="M246.359 62.4491C201.537 59.5453 119.114 59.0475 147.999 80.2864C155.054 83.7432 186.098 87.8361 253.829 76.553C261.161 108.356 260.469 172.626 199.046 175.28C183.829 173.759 158.291 180.839 177.88 221.326C202.366 271.934 205.687 299.312 199.046 304.29C192.406 309.268 157.129 315.49 148.414 312.171C139.698 308.853 240.548 293.919 241.378 312.171C242.042 326.773 178.019 323.51 145.924 320.053" stroke="#115099" stroke-width="4"/>
 <defs>
-<radialGradient id="paint0_radial_251_223" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.30383e-06 37) rotate(-50.1428) scale(43.4193)">
+<radialGradient id="paint0_radial_251_194" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(136 176) rotate(-50.1428) scale(141.993)">
 <stop stop-color="#D9D4EB"/>
 <stop offset="1" stop-color="#D9D4EB" stop-opacity="0"/>
 </radialGradient>

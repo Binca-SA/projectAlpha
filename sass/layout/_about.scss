@@ -5,6 +5,7 @@
     justify-content: center;
     text-align: center;
     font-family: $normal-text;
+    @include max-width-interior-cards;
     /*@include padding-about;*///peligroso, jode tamaño cartas
 }
     .header__about{
@@ -13,7 +14,7 @@
             left: 1.7em;
             right: 1.7em;
         }
-        @include  margin-about-desktop;
+        // @include  margin-about-desktop;
     }
     
     .frase__pequeña{
@@ -22,7 +23,7 @@
             right: 1.7em;
         }
         font-size: $font-size;
-        @include  margin-about-desktop;    
+        // @include  margin-about-desktop;    
         @include tipografia-desktop;
     }
 
@@ -77,11 +78,12 @@
     
     .frase-despedida{
         font-size: $font-size;
+        @include tipografia-desktop;
         margin: {
             left: 2em;
             right: 2em;
-            top: 3em;
             bottom: 2em;
+            top: 1.3em;
         }
     }
 

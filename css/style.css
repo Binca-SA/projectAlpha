@@ -24,31 +24,31 @@ body {
   overflow: hidden;
   /*convertir el background en gradient animation*/
   background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease-in-out infinite;
-          animation: gradient 15s ease-in-out infinite;
+  -webkit-animation: gradient 30s ease-in-out infinite;
+          animation: gradient 30s ease-in-out infinite;
 }
 
 /*Animación de del gradiente*/
 @-webkit-keyframes gradient {
   0% {
-    background-position: 0% 400%;
+    background-position: 0% 500%;
   }
   50% {
-    background-position: 100% 400%;
+    background-position: 100% 500%;
   }
   100% {
-    background-position: 0% 400%;
+    background-position: 0% 500%;
   }
 }
 @keyframes gradient {
   0% {
-    background-position: 0% 400%;
+    background-position: 0% 500%;
   }
   50% {
-    background-position: 100% 400%;
+    background-position: 100% 500%;
   }
   100% {
-    background-position: 0% 400%;
+    background-position: 0% 500%;
   }
 }
 /*Menu*/
@@ -152,7 +152,7 @@ input {
 
 .scroll-section {
   margin-top: 35px;
-  margin-bottom: 87px;
+  margin-bottom: 37px;
   margin-left: 35px;
   margin-right: 35px;
   width: 50%;
@@ -160,6 +160,12 @@ input {
   border-radius: 39px;
   /*display: flex;*/
   /*flex-direction: column;*/
+}
+@media (min-width: 1700px) {
+  .scroll-section .max-width-cards {
+    margin-left: 6.25em;
+    margin-right: 6.25em;
+  }
 }
 @media (min-width: 900px) {
   .scroll-section {
@@ -306,6 +312,12 @@ a:hover {
   font-family: "Space Grotesk", sans-serif;
   /*@include padding-about;*/
 }
+@media (min-width: 1700px) {
+  .about .max-width-cards {
+    margin-left: 6.25em;
+    margin-right: 6.25em;
+  }
+}
 
 .header__about {
   font-family: PP Eiko;
@@ -314,23 +326,11 @@ a:hover {
   margin-left: 1.7em;
   margin-right: 1.7em;
 }
-@media (min-width: 900px) {
-  .header__about {
-    margin-left: 8em;
-    margin-right: 8em;
-  }
-}
 
 .frase__pequeña {
   margin-left: 1.7em;
   margin-right: 1.7em;
   font-size: 14px;
-}
-@media (min-width: 900px) {
-  .frase__pequeña {
-    margin-left: 8em;
-    margin-right: 8em;
-  }
 }
 @media (min-width: 700px) {
   .frase__pequeña {
@@ -494,8 +494,13 @@ a:hover {
   font-size: 14px;
   margin-left: 2em;
   margin-right: 2em;
-  margin-top: 3em;
   margin-bottom: 2em;
+  margin-top: 1.3em;
+}
+@media (min-width: 700px) {
+  .frase-despedida {
+    font-size: 16px;
+  }
 }
 
 .icon__cafe {
@@ -509,8 +514,8 @@ a:hover {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 0.25fr 0.5fr;
-  grid-template-rows: 0.25fr 0.5fr;
+  -ms-grid-rows: 0.25fr 0.25fr;
+  grid-template-rows: 0.25fr 0.25fr;
 }
 .container-header > *:nth-child(1) {
   -ms-grid-row: 1;
@@ -531,6 +536,7 @@ a:hover {
 @media (min-width: 900px) {
   .container-header {
     margin-left: 5em;
+    margin-top: 2em;
   }
   .container-header .header__skills {
     -ms-grid-column: 1;
@@ -584,6 +590,11 @@ a:hover {
   -ms-grid-row: 2;
   grid-row: 2/2;
 }
+@media (min-width: 700px) {
+  .container-parrafos {
+    font-size: 16px;
+  }
+}
 
 .container-ilustracion {
   background-image: url(/images/ilustracion-fortalezas.svg);
@@ -619,14 +630,28 @@ a:hover {
 }
 @media (min-width: 900px) {
   .container-skills-arrow {
-    margin-right: 25em;
+    margin-right: 5em;
     margin-left: 5em;
+  }
+  .container-skills-arrow .arrow__skills {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
 .margin {
   margin-left: 1.5em;
   margin-top: 1.8em;
+}
+
+.arrow__skills {
+  fill: #002F66;
+  width: 80px;
+  height: 80px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /*container donde va cada fortaleza*/
@@ -648,16 +673,15 @@ a:hover {
 }
 @media (min-width: 1000px) {
   .container-contenido-skills {
-    margin-left: 6em;
-    margin-right: 6em;
+    margin-left: 6.5em;
+    margin-right: 6.5em;
     margin-bottom: 4em;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 1fr 4em 1fr;
+    -ms-grid-rows: (1fr)[2];
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 4em;
     justify-items: center;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -676,15 +700,15 @@ a:hover {
     -ms-grid-column: 3;
   }
   .container-contenido-skills > *:nth-child(4) {
-    -ms-grid-row: 3;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
   .container-contenido-skills > *:nth-child(5) {
-    -ms-grid-row: 3;
+    -ms-grid-row: 2;
     -ms-grid-column: 2;
   }
   .container-contenido-skills > *:nth-child(6) {
-    -ms-grid-row: 3;
+    -ms-grid-row: 2;
     -ms-grid-column: 3;
   }
   .container-contenido-skills .container-diseño {
@@ -693,6 +717,8 @@ a:hover {
     grid-column: 2/3;
     -ms-grid-column-align: center;
         justify-self: center;
+    height: 318px;
+    width: 318px;
   }
   .container-contenido-skills .container-web {
     -ms-grid-column: 1;
@@ -702,6 +728,8 @@ a:hover {
     grid-row: 2/2;
     -ms-grid-column-align: center;
         justify-self: center;
+    height: 318px;
+    width: 318px;
   }
   .container-contenido-skills .container-seo {
     -ms-grid-column: 3;
@@ -711,6 +739,16 @@ a:hover {
     grid-row: 2/2;
     -ms-grid-column-align: center;
         justify-self: center;
+    height: 318px;
+    width: 318px;
+  }
+  .container-contenido-skills .title__skill {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 700px) {
+  .container-contenido-skills {
+    font-size: 16px;
   }
 }
 
@@ -738,10 +776,10 @@ a:hover {
   font-family: PP Eiko;
   color: #002F66;
   font-size: 26px;
-  font-size: 23px;
+  font-size: 1.4em;
   margin-top: 2em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: 1.8em;
+  margin-right: 1.8em;
 }
 
 /*SECCIÓN-- CONTACT*/
@@ -774,13 +812,30 @@ a:hover {
     overflow-y: hidden;
   }
   .call .container-header-arrow {
-    width: 18em;
+    width: 23em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-  .call .arrow {
-    -webkit-transform: rotate(250);
-            transform: rotate(250);
-    width: 70px;
+}
+@media (min-width: 900px) and (min-width: 1700px) {
+  .call .container-header-arrow {
+    font-size: 1.3em;
   }
+}
+@media (min-width: 900px) {
+  .call .container-arrow {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    width: 308px;
+    margin: 0;
+  }
+}
+@media (min-width: 900px) {
   .call .contact-form {
     /*display: flex;
     align-items: center;
@@ -811,11 +866,14 @@ a:hover {
   max-width: 18em;
 }
 
-.arrow {
+.container-arrow {
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 80px;
   margin-right: 2em;
+}
+
+.arrow__contact {
   -webkit-transform: rotate(90);
           transform: rotate(90);
   fill: #002F66;
@@ -839,7 +897,7 @@ a:hover {
 .contact-imput {
   min-width: 80%;
   /*max-width: 100%;*/
-  height: 3rem;
+  height: 4rem;
   margin-bottom: 1em;
   background: transparent;
   outline: 0;
@@ -855,16 +913,21 @@ a:hover {
   background-color: #DCEBCE;
   font-size: 12px;
   font-family: "Space Grotesk", sans-serif;
-  height: 30px;
-  width: 122px;
+  min-height: 30px;
+  min-width: 122px;
   color: #002F66;
   margin-top: 2em;
+  margin-bottom: 1.2em;
   font-weight: bolder;
+  cursor: pointer;
 }
 
 /*ESTILOS ETIQUETA <DETAILS> HTML-->para secciones about y fortalezas*/
 .details__about {
   list-style-type: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 1em;
 }
 
 .summary__about::marker {
@@ -900,6 +963,11 @@ a:hover {
   overflow-y: scroll;
   overflow-x: hidden;
   /*darle estilos al scroll*/
+}
+@media (min-width: 900px) {
+  .about .tipo-desktop, .skills .tipo-desktop, .call .tipo-desktop {
+    font-size: 2em;
+  }
 }
 .about::-webkit-scrollbar, .skills::-webkit-scrollbar, .call::-webkit-scrollbar {
   height: 10px;

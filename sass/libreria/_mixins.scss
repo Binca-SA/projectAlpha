@@ -1,3 +1,12 @@
+//mixin para font-size en los headers//
+@mixin font-desktop-headers{
+    @media (min-width:900px){
+        .tipo-desktop{
+            font-size: $font-size-headers-desktop;
+        }
+    }
+}
+
 //h2 style//
 @mixin h2Style{
     margin-top:0;
@@ -7,6 +16,15 @@
     font-weight: normal;
     font-size: .8em;
     color: white;
+}
+//mixin para max-width del interior de las cartas, para que en pantallas superiores a 1000 no se vea feo//
+@mixin max-width-interior-cards{
+    @media (min-width:1700px){
+        .max-width-cards{
+            margin-left: 6.25em;
+            margin-right: 6.25em;
+        }
+    }
 }
 //margenes para desktop//
 @mixin margenesDesktop{
@@ -46,15 +64,15 @@
         }
     }
 }
-//mixin para margenes en desktop seccion about//
-@mixin margin-about-desktop{
-    @media (min-width:900px){
-        margin: {
-            left:$margin-intro-about;
-            right:$margin-intro-about;
-        }
-    }
-}
+//mixin para margenes en desktop seccion about//LO DEJO COMENTADO PK NO CREO Q HAGA FALTA
+// @mixin margin-about-desktop{
+//     @media (min-width:900px){
+//         margin: {
+//             left:$margin-intro-about;
+//             right:$margin-intro-about;
+//         }
+//     }
+// }
 //mixin para tamaño imagen en desktop//
 @mixin imagen-about{
     @media (min-width:900px){
@@ -99,6 +117,7 @@
 @mixin grid-header-skills{
     @media (min-width:900px) {
         margin-left: 5em;
+        margin-top: 2em;
         .header__skills{
             grid-column: 1/2;
             grid-row: 1/2;
@@ -119,8 +138,11 @@
 //mixin margin right encabezados skills//
 @mixin margin-skills{
     @media (min-width:900px) {
-        margin-right:25em;
+        margin-right:5em;
         margin-left: 5em;
+        .arrow__skills{
+            align-self: center;
+        }
         
     }
 }
@@ -128,30 +150,39 @@
 @mixin grid-fortalezas{
     @media (min-width:1000px) {
         margin: {
-            left: 6em;
-            right: 6em;
+            left: 6.5em;
+            right: 6.5em;
             bottom: 4em;
         }
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        row-gap: 4em;
+        // row-gap: 4em;
         justify-items: center;
         justify-content: space-evenly;
         .container-diseño{
             grid-column: 2/3;
             justify-self: center;
+            height: $medida-bola-desktop;
+            width: $medida-bola-desktop;
         }
         .container-web{
             grid-column: 1/2;
             grid-row: 2/2;
             justify-self: center;
+            height: $medida-bola-desktop;
+            width: $medida-bola-desktop;
         }
         .container-seo{
             grid-column: 3/4;
             grid-row: 2/2;
             justify-self: center;
+            height: $medida-bola-desktop;
+            width: $medida-bola-desktop;
         }  
+        .title__skill{
+            font-size: 1.5em;
+        }
     }
 }
 ////////////////CONTACT////////////////
@@ -165,11 +196,18 @@
        overflow-y: hidden;//para quitar scroll en desktop, pero no funciona//
    }
     .container-header-arrow{
-        width: 18em;
+        width: 23em;
+        @media (min-width:1700px){
+            font-size: 1.3em;
+        }
+        flex-direction: row;
+        justify-content: flex-end;
+
     }
-    .arrow{
-        transform: rotate(250);//no obedece a esto//
-        width:70px;
+    .container-arrow{
+        transform: rotate(270deg);
+        width: 308px;
+        margin: 0;
     }
     .contact-form{
         /*display: flex;

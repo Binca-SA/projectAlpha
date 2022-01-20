@@ -6,9 +6,11 @@
     background-color:$corporativo-cuaternario;
     font-size: 12px;
     font-family: $normal-text;
-    height: 30px;
-    width: 122px;
+    min-height: 30px;
+    min-width: 122px;
     color: $darcker-blue;
     margin-top:2em;
+    margin-bottom: 1.2em;
     font-weight: $bold;
+    cursor: pointer;
 }

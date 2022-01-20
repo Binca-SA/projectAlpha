@@ -3,12 +3,10 @@
     @include desktop-contact;
     display: flex;
     flex-direction: column;
-    
 }
     .container-header-arrow{
         display: flex;
         flex-direction: column;
-        
     }
         .header__contact{
             font-size: 3em;
@@ -22,10 +20,12 @@
             }
             max-width: 18em;
         }
-        .arrow{
+        .container-arrow{
             align-self: flex-end;
             width: 80px;//para desktop hay q cambiar el tamaño//
             margin-right: 2em;
+        }
+        .arrow__contact{
             transform: rotate(90);
             fill:$darcker-blue;
         }
@@ -40,7 +40,7 @@
         .contact-imput{
             min-width: 80%;
             /*max-width: 100%;*/
-            height: 3rem;
+            height: 4rem;
             margin-bottom: 1em;
             background: transparent;
             outline: 0;
