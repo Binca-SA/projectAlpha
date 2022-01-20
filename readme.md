@@ -58,7 +58,7 @@
                 </ul>
             </ul>    
     </ul>    
-<h3>SINTAXIS</h3>
+<h3>NORMAS DE ESCRITURA</h3>
     <ul><b>1. Comentarios</b>
         <li>Se escribe en mayúscula el título de las secciones</li>
         <li>Se escribe en minúscula todo el resto, ser lo más explicito posible para evitar perder el tiempo y facilitar la comprensión. </li>
