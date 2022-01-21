@@ -121,7 +121,8 @@ input {
   transition: 0.2s;
 }
 
-.menu__label:focus {
+/*Para cuando el label esta checked*/
+.menu__label-checked {
   color: #002F66;
   background-size: #FBF9F0;
   background-color: #FBF9F0;

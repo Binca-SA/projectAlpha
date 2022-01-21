@@ -19,4 +19,42 @@ change = () => {
         document.body.style.backgroundImage = secundary
     }
 
+
+
+// //poner focus labels cuando están checked
+// const addClass = function("idRef"){
+//     const elements = document.querySellector('#'+ "idRef").addClass = "menu__label-checked";
+//     for (let element of elements){
+//         element.className ="menu__label" 
+//     }
+//     console.log("idRef")
+//     elements[numer0].addClass = "menu__label-checked"
+// }
+
+
+// //PARA HACER QUE LOS LABELS SE QUEDEN CHECKEADDOS CUANDO ESTÁS EN UNA SECCIÓN//
+
+    // // Recoge los elementos con la clase .input-scroll
+     let inputs = document.querySelectorAll('.input-scroll')
+
+    // // Recorre los elementos
+    inputs.forEach( (input) => {
+
+    // // Detecta si esta checked
+        if(input.checked) {
+
+    // // Busca el label al que hace referencia el id del input
+            let label = document.querySelector('#'+input.id+'-label')
+
+    // // Añade la clase menu__label-checked al elemento
+            label.classList.add('menu__label-checked')
+        }
+        else {
+    // // Busca el label al que hace referencia el id del input
+            let label = document.querySelector('#'+input.id+'-label')
+
+    // // Elimina la clase menu__label-checked al elemento
+            label.classList.remove('menu__label-checked')
+        }
+    })
 }

@@ -4,7 +4,7 @@
     <p><b>One page de presentación personal y profesional. En el que se trata: una breve presentación de la profesional, a qué se dedica y cómo contactarla</b></p>
 
 <h3>HERRAMIENTAS EMPLEADAS</h3>
-    <p>Diseño y proptipo en Figma.</p> 
+    <p>Diseño y prototipo en Figma.</p> 
     <ul>Lenguajes empleados: 
         <li> HTML5</li>
         <li> CSS3 </li>

@@ -53,22 +53,14 @@ input{
             transition: 0.2s;
         }
     }
-    //prueba, para cuando el label esta checked//
-    // .menu__label-checked{
-    //         color: $darcker-blue;
-    //         background-size:$corporativo-secundario;
-    //         background-color: $corporativo-secundario;
-    //         border-radius:19px;//$border-radius-menu;//
-    //         font-weight: bold;
-    //         opacity: 1;
-    //         transition: 0.2s;
-    // }
-    .menu__label:focus{
-                color: $darcker-blue;
-                background-size:$corporativo-secundario;
-                background-color: $corporativo-secundario;
-                border-radius:19px;//$border-radius-menu;//
-                font-weight: bold;
-                opacity: 1;
-                transition: 0.2s;
-        }
+    /*Para cuando el label esta checked*/
+    .menu__label-checked{
+            color: $darcker-blue;
+            background-size:$corporativo-secundario;
+            background-color: $corporativo-secundario;
+            border-radius:19px;//$border-radius-menu;//
+            font-weight: bold;
+            opacity: 1;
+            transition: 0.2s;
+    }
+    
