@@ -37,13 +37,14 @@
             width: 312px;
             height: 459px;
             @include imagen-about;
-            background-image: url(/images/imagen-about.jpg);
+            background-image: url(../images/imagen-about.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             margin: 0 auto;
             grid-column: 2/4;
             grid-row: 1/4;
+            margin-top: $margin-left;
         }
             
         .frase__motivadora{
@@ -86,13 +87,15 @@
             top: 1.3em;
         }
     }
-
-    .icon__cafe{
-        margin: {
-            left: 1.5em;
-            right: 1.5em;
-        }
+    .cotainer-icons{
+        margin-bottom: 1.5em;
     }
+        .icon__cafe{
+            margin: {
+                left: 1.5em;
+                right: 1.5em;
+            }
+        }
 
     
     

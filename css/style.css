@@ -3,7 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Space+Grotesk:wght@300;400;500;600&display=swap");
 @font-face {
   font-family: PP Eiko;
-  src: url(PPEiko-Medium.otf);
+  src: url(./font/PPEiko-Medium.otf);
+  font-style: normal;
+  font-weight: 500;
 }
 /*CARACTERÍSTICAS GENERALES SITE*/
 * {
@@ -31,24 +33,24 @@ body {
 /*Animación de del gradiente*/
 @-webkit-keyframes gradient {
   0% {
-    background-position: 0% 500%;
+    background-position: 0% 400%;
   }
   50% {
-    background-position: 100% 500%;
+    background-position: 100% 450%;
   }
   100% {
-    background-position: 0% 500%;
+    background-position: 0% 400%;
   }
 }
 @keyframes gradient {
   0% {
-    background-position: 0% 500%;
+    background-position: 0% 400%;
   }
   50% {
-    background-position: 100% 500%;
+    background-position: 100% 450%;
   }
   100% {
-    background-position: 0% 500%;
+    background-position: 0% 400%;
   }
 }
 /*Menu*/
@@ -69,7 +71,6 @@ input {
 .menu {
   margin-right: 2em;
   margin-left: 2em;
-  margin-top: 1.5em;
   background: conic-gradient(from 128.59deg at 5.61% -53.33%, #235BA3 -40.43deg, #D9D4EB 200.99deg, #235BA3 319.57deg, #D9D4EB 526.99deg);
   border-radius: 19px;
   display: -webkit-box;
@@ -412,7 +413,7 @@ a:hover {
   border-radius: 156px 0 156px 11px;
   width: 312px;
   height: 459px;
-  background-image: url(/images/imagen-about.jpg);
+  background-image: url(../images/imagen-about.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -423,6 +424,7 @@ a:hover {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1/4;
+  margin-top: 0.7em;
 }
 @media (min-width: 900px) {
   .imagen__about {
@@ -502,6 +504,10 @@ a:hover {
   .frase-despedida {
     font-size: 16px;
   }
+}
+
+.cotainer-icons {
+  margin-bottom: 1.5em;
 }
 
 .icon__cafe {
@@ -598,7 +604,7 @@ a:hover {
 }
 
 .container-ilustracion {
-  background-image: url(/images/ilustracion-fortalezas.svg);
+  background-image: url(../images/ilustracion-fortalezas.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -923,17 +929,25 @@ a:hover {
   cursor: pointer;
 }
 
-/*ESTILOS ETIQUETA <DETAILS> HTML-->para secciones about y fortalezas*/
-.details__about {
-  list-style-type: none;
-  font-size: 14px;
+/*ESTILOS ETIQUETA <span> HTML-->para seccion about*/
+.texto-oculto {
+  display: none;
   cursor: pointer;
-  margin-bottom: 1em;
+  font-size: 14px;
+  margin-top: 0.7em;
+}
+@media (min-width: 700px) {
+  .texto-oculto {
+    font-size: 16px;
+  }
 }
 
-.summary__about::marker {
-  content: url(/images/icon-plus.svg);
-  list-style-type: none;
+.plus {
+  cursor: pointer;
+}
+
+.menos {
+  display: none;
 }
 
 /*funcionamiento de la transición de las secciones: ABOUT, FORTALEZAS, CONTACTO*/

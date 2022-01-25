@@ -58,3 +58,36 @@ change = () => {
         }
     })
 }
+
+//PARA CREAR BOTÓN DE VER MÁS Y VER MENOS EN SECCIÓN ABOUT//
+function mostrarOcultar(id, iconId, idMenos){
+    var elemento = document.getElementById(id);
+    // var icon = document.getElementById(iconId);
+    // var menosIcon = document.getElementById(idMenos);
+
+    if(!elemento) {
+    return true;
+    }
+    if (elemento.style.display == "none") {
+    elemento.style.display = "block";
+    // icon.style.display = "none";
+    // menosIcon.style.display = "block";
+    } else {
+    elemento.style.display = "none";
+    // icon.style.display = "block";
+    // menosIcon.style.display = "none";
+    };
+    return true;
+    };
+
+
+//     <h1 class="elemento" onclick="addClass()">Click me</h1>
+// <button class="desplegar">+</button>
+// <script>
+// function addClass() {
+//   const elemento = document.querySelector('.elemento');
+//   elemento.classList.toggle('active');
+  
+//   document.querySelector('.desplegar').textContent = '-';
+// }
+// </script>

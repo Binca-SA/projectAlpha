@@ -1,0 +1,31 @@
+// /*ESTILOS ETIQUETA <DETAILS> HTML-->para secciones about y fortalezas*/
+// .details__about{
+//     list-style-type: none;
+//     font-size:$font-size ;
+//     cursor: pointer;
+//     margin-bottom: 1em;
+// }
+
+// .summary__about::marker{
+//     content:url(/images/icon-plus.svg);
+//     list-style-type: none;
+//     // cursor: pointer;
+//     // &:hover{
+//     //     background: $corporativo-terciario;
+//     // }
+// }
+
+/*ESTILOS ETIQUETA <span> HTML-->para seccion about*/
+.texto-oculto{
+    display: none;
+    cursor: pointer;
+    font-size: $font-size;
+    @include tipografia-desktop;
+    margin-top:$margin-left;
+}
+.plus{
+    cursor:pointer;
+}
+.menos{
+    display: none;
+}

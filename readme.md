@@ -24,13 +24,15 @@
         <li><b>Images</b>- Carpeta para los SVG y las imagenes que se utilizan en el proyecto </li>
         <li><b>JS</b>-Realización del cambio de background al cambiar de sección. 
             Cuando "home" está *checked* el background es de color sólido. 
-            En el resto de secciones es un gradiente animado.</li> 
+            En el resto de secciones es un gradiente animado.
+            - También se ha echo que los labels se queden chekeados cuando estás en la sección que corresponde. 
+            - Por último se ha creado un botón que despliega texto. </li> 
         <li><b>sass </b>
             <p>Encontramos las hojas de estilo parciales SCSS y el archivo padre SCSS. </p>
             <ul><b>ORGANIZACIÓN DE LAS CARPETAS</b>
                 <ul><b>htmlelements</b> - Elementos del HTML nativos que se le han cambiado los estilos que tenian prederminados: 
                     <li>_buttons.scss</li>
-                    <li>_details.scss</li>
+                    <li>_span.scss</li>
                 </ul>
                 <br>
                 <ul><b>layout</b> - Los elemetos que conforman la estrcutura de la web, se ha dividio en secciones: 

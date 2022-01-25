@@ -19,12 +19,12 @@ body{
     /*Animación de del gradiente*/
     @keyframes gradient{
         0% {
-            background-position: 0% 500%;
+            background-position: 0% 400%;
           }
           50% {
-            background-position: 100% 500%;
+            background-position: 100% 450%;
           }
           100% {
-            background-position: 0% 500%;
+            background-position: 0% 400%;
           }
     }
