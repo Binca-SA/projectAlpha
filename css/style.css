@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Space+Grotesk:wght@300;400;500;600&display=swap");
 @font-face {
   font-family: PP Eiko;
-  src: url(./font/PPEiko-Medium.otf);
+  src: url(/font/PPEiko-Medium.otf);
   font-style: normal;
   font-weight: 500;
 }
@@ -54,23 +54,17 @@ body {
   }
 }
 /*Menu*/
-input {
+.input-scroll {
   /*para ocultar los inputs*/
   /*opacity: 0;
   position: absolute;*/
-  top: -10000em;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  display: none;
 }
 
 .menu {
   margin-right: 2em;
   margin-left: 2em;
+  margin-top: 1em;
   background: conic-gradient(from 128.59deg at 5.61% -53.33%, #235BA3 -40.43deg, #D9D4EB 200.99deg, #235BA3 319.57deg, #D9D4EB 526.99deg);
   border-radius: 19px;
   display: -webkit-box;
@@ -680,8 +674,6 @@ a:hover {
 }
 @media (min-width: 1000px) {
   .container-contenido-skills {
-    margin-left: 6.5em;
-    margin-right: 6.5em;
     margin-bottom: 4em;
     display: -ms-grid;
     display: grid;
@@ -728,9 +720,11 @@ a:hover {
     width: 318px;
   }
   .container-contenido-skills .container-web {
+    margin-right: auto;
+    margin-left: 40px;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
     -ms-grid-row: 2;
     grid-row: 2/2;
     -ms-grid-column-align: center;
@@ -739,9 +733,11 @@ a:hover {
     width: 318px;
   }
   .container-contenido-skills .container-seo {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3/4;
+    margin-left: auto;
+    margin-right: 40px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
     -ms-grid-row: 2;
     grid-row: 2/2;
     -ms-grid-column-align: center;
@@ -899,6 +895,7 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 4em;
+  padding-bottom: 1em;
 }
 
 .contact-imput {
