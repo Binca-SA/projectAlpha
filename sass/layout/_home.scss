@@ -39,6 +39,7 @@
         }
         align-items: center;
         gap: .5em;
+        font-size: 15.5px;
     }
         .descripcion-profesion__diseñadora{
             @include h2Style;
@@ -57,7 +58,7 @@ a:link, a:visited, a:active{
     display: flex;
     justify-content: space-between;
     font-family:$h2-home;
-    font-size: 15px;
+    font-size: 14px;
     list-style: none;
     padding: 1.5em;
 }
