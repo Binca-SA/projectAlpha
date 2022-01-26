@@ -19,19 +19,6 @@ change = () => {
         document.body.style.backgroundImage = secundary
     }
 
-
-
-// //poner focus labels cuando están checked
-// const addClass = function("idRef"){
-//     const elements = document.querySellector('#'+ "idRef").addClass = "menu__label-checked";
-//     for (let element of elements){
-//         element.className ="menu__label" 
-//     }
-//     console.log("idRef")
-//     elements[numer0].addClass = "menu__label-checked"
-// }
-
-
 // //PARA HACER QUE LOS LABELS SE QUEDEN CHECKEADDOS CUANDO ESTÁS EN UNA SECCIÓN//
 
     // // Recoge los elementos con la clase .input-scroll
@@ -60,34 +47,36 @@ change = () => {
 }
 
 //PARA CREAR BOTÓN DE VER MÁS Y VER MENOS EN SECCIÓN ABOUT//
-function mostrarOcultar(id, iconId, idMenos){
-    var elemento = document.getElementById(id);
-    // var icon = document.getElementById(iconId);
-    // var menosIcon = document.getElementById(idMenos);
+// function mostrarOcultar(id, iconId, idMenos){
+//     var elemento = document.getElementById(id);
+//     // var icon = document.getElementById(iconId);
+//     // var menosIcon = document.getElementById(idMenos);
 
-    if(!elemento) {
-    return true;
-    }
-    if (elemento.style.display == "none") {
-    elemento.style.display = "block";
-    // icon.style.display = "none";
-    // menosIcon.style.display = "block";
-    } else {
-    elemento.style.display = "none";
-    // icon.style.display = "block";
-    // menosIcon.style.display = "none";
-    };
-    return true;
-    };
+//     if(!elemento) {
+//     return true;
+//     }
+//     if (elemento.style.display == "none") {
+//     elemento.style.display = "block";
+//     // icon.style.display = "none";
+//     // menosIcon.style.display = "block";
+
+//     } else {
+//     elemento.style.display = "none";
+//     // icon.style.display = "block";
+//     // menosIcon.style.display = "none";
+//     };
+//     return true;
+//     };
 
 
 //     <h1 class="elemento" onclick="addClass()">Click me</h1>
 // <button class="desplegar">+</button>
-// <script>
-// function addClass() {
-//   const elemento = document.querySelector('.elemento');
+
+// function mostrarOcultar() {
+//   const elemento = document.querySelector('.texto-oculto');
 //   elemento.classList.toggle('active');
   
-//   document.querySelector('.desplegar').textContent = '-';
+//   document.querySelector('.desplegar').innerHTML = <svg width="17" height="5" viewBox="0 0 17 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+//   <path d="M0 2.5L17 2.5" stroke="#002F66" stroke-width="4"/>
+//   </svg>;
 // }
-// </script>
