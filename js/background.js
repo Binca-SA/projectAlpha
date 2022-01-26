@@ -35,7 +35,7 @@ change = () => {
 // //PARA HACER QUE LOS LABELS SE QUEDEN CHECKEADDOS CUANDO ESTÁS EN UNA SECCIÓN//
 
     // // Recoge los elementos con la clase .input-scroll
-     let inputs = document.querySelectorAll('.input-scroll')
+    let inputs = document.querySelectorAll('.input-scroll')
 
     // // Recorre los elementos
     inputs.forEach( (input) => {
@@ -57,37 +57,25 @@ change = () => {
             label.classList.remove('menu__label-checked')
         }
     })
-}
+};
 
 //PARA CREAR BOTÓN DE VER MÁS Y VER MENOS EN SECCIÓN ABOUT//
-function mostrarOcultar(id, iconId, idMenos){
-    var elemento = document.getElementById(id);
-    // var icon = document.getElementById(iconId);
-    // var menosIcon = document.getElementById(idMenos);
+    
+function addClass(idTextoOculto, svgClass) {
+    const texto = document.getElementById(idTextoOculto);
+    var iconoSvg = document.querySelector("."+svgClass);
+    var identifier = iconoSvg.id;
 
-    if(!elemento) {
-    return true;
+    if (identifier == "plus-icon") {
+        iconoSvg.innerHTML = '<path d="M0 2.5L17 2.5" stroke="#002F66" stroke-width="4"/>'
+        iconoSvg.id = "minus-icon"
+        texto.style.display = "block"
+
+    } else if (identifier== 'minus-icon') {
+        iconoSvg.innerHTML = '<path d="M14.8101 24V6" stroke="#115099" stroke-width="3"/> <path d="M5.00003 15L24.6206 15" stroke="#115099" stroke-width="3"/>'
+        iconoSvg.id = "plus-icon"
+        texto.style.display = "none"
     }
-    if (elemento.style.display == "none") {
-    elemento.style.display = "block";
-    // icon.style.display = "none";
-    // menosIcon.style.display = "block";
-    } else {
-    elemento.style.display = "none";
-    // icon.style.display = "block";
-    // menosIcon.style.display = "none";
-    };
-    return true;
-    };
 
-
-//     <h1 class="elemento" onclick="addClass()">Click me</h1>
-// <button class="desplegar">+</button>
-// <script>
-// function addClass() {
-//   const elemento = document.querySelector('.elemento');
-//   elemento.classList.toggle('active');
-  
-//   document.querySelector('.desplegar').textContent = '-';
-// }
-// </script>
+};
+    
