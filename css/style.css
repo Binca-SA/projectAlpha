@@ -163,6 +163,16 @@ body {
     margin-right: 6.25em;
   }
 }
+@media only screen and (min-width: 320px) {
+  .scroll-section .scroll-section {
+    height: 69vh;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .scroll-section .scroll-section {
+    height: 69vh;
+  }
+}
 @media (min-width: 900px) {
   .scroll-section {
     margin-right: 15vw;
@@ -313,6 +323,16 @@ a:hover {
   .about .max-width-cards {
     margin-left: 6.25em;
     margin-right: 6.25em;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .about .scroll-section {
+    height: 69vh;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .about .scroll-section {
+    height: 69vh;
   }
 }
 
@@ -619,7 +639,7 @@ a:hover {
 
 .p__header-skills {
   margin-left: 2.4em;
-  margin-right: 1.5em;
+  margin-right: 2.5em;
 }
 
 /*segundo encabezado sección FORTALEZAS*/
@@ -946,12 +966,32 @@ a:hover {
   }
 }
 
-.plus {
-  cursor: pointer;
+.span-1 {
+  margin-left: 2.5em;
+  margin-right: 2.5em;
 }
 
+/*iconos*/
 .menos {
   display: none;
+}
+
+.desplegar-3 {
+  cursor: pointer;
+  -webkit-transform: translate(5px, 10px);
+          transform: translate(5px, 10px);
+}
+
+.desplegar-2 {
+  cursor: pointer;
+  -webkit-transform: translate(7px, 10px);
+          transform: translate(7px, 10px);
+}
+
+.desplegar-1 {
+  cursor: pointer;
+  -webkit-transform: translate(5px, 10px);
+          transform: translate(5px, 10px);
 }
 
 /*funcionamiento de la transición de las secciones: ABOUT, FORTALEZAS, CONTACTO*/

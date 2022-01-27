@@ -12,6 +12,7 @@
 }
 .scroll-section{
     @include max-width-interior-cards;
+    // @include horizontal-layout;
     margin: {
         top:35px;
         bottom:37px;

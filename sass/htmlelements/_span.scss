@@ -23,9 +23,25 @@
     @include tipografia-desktop;
     margin-top:$margin-left;
 }
-.plus{
-    cursor:pointer;
+.span-1{
+    margin: {
+        left: 2.5em;
+        right: 2.5em;
+    }
 }
+/*iconos*/
 .menos{
     display: none;
+}
+.desplegar-3{
+    cursor:pointer;
+    transform: translate(5px, 10px);
+}
+.desplegar-2{
+    cursor:pointer;
+    transform: translate(7px, 10px);
+}
+.desplegar-1{
+    cursor:pointer;
+    transform: translate(5px, 10px);
 }

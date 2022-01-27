@@ -25,6 +25,16 @@
             margin-right: 6.25em;
         }
     }
+    @media only screen and (min-width:320px){
+        .scroll-section{
+            height: 69vh;
+        }
+    }
+    @media only screen and (min-width:480px){
+        .scroll-section{
+            height: 69vh;
+        }
+    }
 }
 //margenes para desktop//
 @mixin margenesDesktop{
